@@ -2,7 +2,7 @@ import { db, Product } from 'astro:db';
 
 
 
-export async function GET({ params }) {
+export async function GET({ params } : any) {
    //   const id = params.id;
    //   const product = await getProduct(id);
    const product = await db.select().from(Product);
